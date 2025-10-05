@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloomWatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">BloomWatch</div>
+        <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#mapSection">Dashboard</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <h1>Witness the Pulse of Life on Earth</h1>
+        <p>Detect plant blooming events around the globe using simulated NDVI data.</p>
+        <button id="startDemo">Start Demo</button>
+    </section>
+
+    <!-- Map & Dashboard -->
+    <section id="mapSection">
+        <h2>Interactive Map & AI Bloom Prediction</h2>
+        <div id="map"></div>
+        <p id="predictionText">Click on the map to see bloom predictions!</p>
+        <canvas id="bloomChart" width="400" height="200"></canvas>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>About BloomWatch</h2>
+        <p>This demo simulates NASA NDVI data to showcase AI-style bloom predictions for vegetation monitoring.</p>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    &copy;2025 Team FarmGuard | Built with ❤️for NASA Space App Challenge |
+
+</footer>
+
+</html>
